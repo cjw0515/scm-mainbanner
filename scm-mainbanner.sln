@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "scm-mainbanner", "scm-mainbanner\scm-mainbanner.csproj", "{E05688C3-29F4-411C-8566-99903F63FA1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E05688C3-29F4-411C-8566-99903F63FA1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05688C3-29F4-411C-8566-99903F63FA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05688C3-29F4-411C-8566-99903F63FA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05688C3-29F4-411C-8566-99903F63FA1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {786DD598-27CD-415C-A479-77C9033D50AA}
+	EndGlobalSection
+EndGlobal
