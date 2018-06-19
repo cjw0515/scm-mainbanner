@@ -1,5 +1,6 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model BannerViewModel
+@{
+    ViewData["Title"] = "메인베너 설정";
 }
 
 <div class="container">
@@ -70,19 +71,22 @@
             </tr>
         </thead>
         <tbody>
+            @foreach (var banner in Model.Banners)
+            {
             <tr>
-                <td>1</td>
-                <td>상단롤링</td>
-                <td>텍스트</td>
-                <td>링크</td>
-                <td>실시간</td>
-                <td>20180620</td>
-                <td>20180620</td>
-                <td>Y</td>
-                <td>80</td>
-                <td>조은수</td>
-                <td>임혜원</td>
+                <td>@banner.Id</td>
+                <td>@banner.gubun</td>
+                <td>@banner.linkType</td>
+                <td>@banner.linkType</td>
+                <td>@banner.releaseCycle</td>
+                <td>@banner.startDate</td>
+                <td>@banner.endDate</td>
+                <td>@banner.isUsing</td>
+                <td>@banner.priority</td>
+                <td>@banner.registrant</td>
+                <td>@banner.worker</td>
             </tr>
+            }
             <tr>
                 <td>1</td>
                 <td>상단롤링</td>

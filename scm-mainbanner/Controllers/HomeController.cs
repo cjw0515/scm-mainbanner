@@ -4,15 +4,32 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using scm_mainbanner.Data.Repositories;
 using scm_mainbanner.Models;
+using scm_mainbanner.ViewModels;
 
 namespace scm_mainbanner.Controllers
 {
     public class HomeController : Controller
     {
+
+        private readonly IBannerRepository _repository;
+
+        public HomeController(IBannerRepository repository)
+        {
+            _repository = repository;
+        }
+
         public IActionResult Index()
         {
-            return View();
+
+            var banners = _repository.GetAllBanners();
+            var viewModel = new BannerViewModel()
+            {
+                Banners = banners
+            };
+
+            return View(viewModel);
         }
 
         public IActionResult About()
